@@ -103,6 +103,7 @@ ol {
   }
 
   .mobile-menu-wrapper {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -120,7 +121,10 @@ ol {
 
   .mobile-menu-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding-top: 72px;
+    padding-bottom: 40px;
   }
 
   .mobile-menu-close-btn {
@@ -138,8 +142,8 @@ ol {
     height: 24px;
   }
 
-  .mobile-menu-navigation {
-    margin-bottom: 168px;
+  .social-contact {
+    margin-top: auto;
   }
 
   .mobile-menu {
@@ -174,6 +178,10 @@ ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu-tel {
+    color: #4d5ae5;
   }
 
   .social-icon-mobile-menu {
@@ -250,10 +258,10 @@ ol {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
-  padding: 0 66px 72px 66px;
+  width: 217px;
   text-transform: capitalize;
-  max-width: 288px;
   margin: auto;
+  margin-bottom: 72px;
 }
 
 .text-button {
@@ -533,7 +541,7 @@ ol {
   padding-top: 96px;
 }
 
-.title-thre {
+.title-benefits-three {
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
@@ -607,9 +615,10 @@ ol {
   gap: 72px;
 }
 
-.text-list {
+.text-list-team {
   color: #434455;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
@@ -716,6 +725,10 @@ ol {
   color: #f4f4fd;
 }
 
+.social-item-bot {
+  margin-bottom: 72px;
+}
+
 .social-media {
   display: block;
   margin-bottom: 16px;
@@ -729,7 +742,6 @@ ol {
   justify-content: center;
   gap: 16px;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .social-icon-bot {
@@ -893,9 +905,9 @@ ol {
     color: #404bbf;
   }
 
-  /* ====================/TABLET HEADER STYLES================ */
+  /* =================/TABLET HEADER STYLES================ */
 
-  /* =====================TABLET LOGO STYLES================ */
+  /* ====================TABLET LOGO STYLES================ */
 
   .logo-central {
     padding: 112px 0;
@@ -911,9 +923,9 @@ ol {
     font-size: 56px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding: 0 0 32px 0;
+    margin-bottom: 36px;
     text-transform: none;
-    max-width: 496px;
+    width: 496px;
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -943,8 +955,8 @@ ol {
 
   /* ==================TABLET BENEFITS STYLES================ */
 
-  .title-thre {
-    text-align: start;
+  .title-benefits-three {
+    text-align: left;
   }
 
   .list-central {
@@ -984,9 +996,9 @@ ol {
     fill: #f4f4fd;
   }
 
-  /* =================/TABLET TEAM LIST STYLES=============== */
+  /* ===============/TABLET TEAM LIST STYLES=============== */
 
-  /* ================TABLET PORTFOLIO STYLES================= */
+  /* ==============TABLET PORTFOLIO STYLES================= */
 
   .portfolio-list {
     flex-direction: row;
@@ -1000,9 +1012,9 @@ ol {
     height: 300px;
   }
 
-  /* ================/TABLET PORTFOLIO STYLES================ */
+  /* ==============/TABLET PORTFOLIO STYLES================ */
 
-  /* ===================TABLET FOOTER STYLES================ */
+  /* =================TABLET FOOTER STYLES================ */
 
   .container-bot {
     display: flex;
@@ -1029,6 +1041,14 @@ ol {
     max-width: 264px;
   }
 
+  .logo-type-bottom {
+    text-align: left;
+  }
+
+  .social-media {
+    text-align: left;
+  }
+
   /* ===================/TABLET FOOTER STYLES=============== */
 }
 
@@ -1039,7 +1059,7 @@ ol {
     padding-right: 15px;
   }
 
-  /* ===================DESKTOP HEADER STYLES================= */
+  /* ================DESKTOP HEADER STYLES================= */
 
   .header-container {
     display: flex;
@@ -1065,9 +1085,9 @@ ol {
     letter-spacing: 0.02em;
   }
 
-  /* ===================/DESKTOP HEADER STYLES================ */
+  /* ================/DESKTOP HEADER STYLES================ */
 
-  /* =====================DESKTOP LOGO STYLES================ */
+  /* ===================DESKTOP LOGO STYLES================ */
 
   .logo-central {
     padding: 188px 0;
@@ -1080,7 +1100,7 @@ ol {
   }
 
   .text-logo-central {
-    padding: 0 0 48px 0;
+    margin-bottom: 48px;
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
@@ -1095,9 +1115,9 @@ ol {
     }
   }
 
-  /* =====================/DESKTOP LOGO STYLES================ */
+  /* ==================/DESKTOP LOGO STYLES================ */
 
-  /* ================DESKTOP MODAL WINDOW STYLES============== */
+  /* =============DESKTOP MODAL WINDOW STYLES============== */
   .modal {
     top: 50%;
     left: 50%;
@@ -1105,9 +1125,9 @@ ol {
     width: 408px;
     min-height: 584px;
   }
-  /* ================/DESKTOP MODAL WINDOW STYLES============= */
+  /* =============/DESKTOP MODAL WINDOW STYLES============= */
 
-  /* ==================DESKTOP BENEFITS STYLES================ */
+  /* ===============DESKTOP BENEFITS STYLES================ */
 
   .section {
     padding-bottom: 120px;
@@ -1125,7 +1145,7 @@ ol {
     border: 1px solid #8e8f99;
   }
 
-  .title-thre {
+  .title-benefits-three {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -1143,14 +1163,14 @@ ol {
   .text-list {
     color: #434455;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
   }
 
-  /* =================/DESKTOP BENEFITS STYLES================ */
+  /* ==============/DESKTOP BENEFITS STYLES================ */
 
-  /* ================DESKTOP TEAM LIST STYLES================= */
+  /* =============DESKTOP TEAM LIST STYLES================= */
 
   .social-linc-icon {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1163,7 +1183,7 @@ ol {
 
   /* ================/DESKTOP TEAM LIST STYLES=============== */
 
-  /* ================DESKTOP PORTFOLIO STYLES================ */
+  /* ==============DESKTOP PORTFOLIO STYLES================ */
 
   .portfolio-list {
     row-gap: 48px;
@@ -1185,9 +1205,9 @@ ol {
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
 
-  /* ================/DESKTOP PORTFOLIO STYLES=============== */
+  /* ==============/DESKTOP PORTFOLIO STYLES=============== */
 
-  /* ===================DESKTOP FOOTER STYLES================ */
+  /* =================DESKTOP FOOTER STYLES================ */
 
   .menu-bottom {
     padding-top: 100px;
