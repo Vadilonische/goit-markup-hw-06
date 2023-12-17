@@ -49,8 +49,18 @@
             </li>
           </ul>
         </nav>
-        <address class="link">
-          <ul class="list first-list">
+        <button class="mobile-menu-open-btn" type="button">
+          <svg
+            class="mobile-menu-open-btn-icon"
+            width="24"
+            height="24"
+            aria-label="menu open icon"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <address class="link link-header">
+          <ul class="list first-contact-list">
             <li>
               <a class="link menu-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -139,6 +149,7 @@
             <li class="team-list">
               <img
                 class="logo"
+                srcset="./images/team/mark-guerrero@2x.jpg 2x"
                 src="./images/team/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -182,6 +193,7 @@
             <li class="team-list">
               <img
                 class="logo"
+                srcset="./images/team/tom-ford@2x.jpg 2x"
                 src="./images/team/tom-ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -225,6 +237,7 @@
             <li class="team-list">
               <img
                 class="logo"
+                srcset="./images/team/camila-garcia@2x.jpg 2x"
                 src="./images/team/camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -268,6 +281,7 @@
             <li class="team-list">
               <img
                 class="logo"
+                srcset="./images/team/daniel-wilson@2x.jpg 2x"
                 src="./images/team/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -319,11 +333,12 @@
             <li class="portfolio-list-item">
               <div class="overlay-box">
                 <img
-                  class="logo"
+                  class="logo-portfolio"
+                  srcset="./images/portfolio/banking-app@2x.jpg 2x"
                   src="./images/portfolio/banking-app.jpg"
                   alt="Banking App"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -339,11 +354,12 @@
             <li class="portfolio-list-item">
               <div class="overlay-box">
                 <img
-                  class="logo"
+                  class="logo-portfolio"
+                  srcset="./images/portfolio/cashless-payment@2x.jpg 2x"
                   src="./images/portfolio/cashless-payment.jpg"
                   alt="Cashless Payment"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -359,11 +375,12 @@
             <li class="portfolio-list-item">
               <div class="overlay-box">
                 <img
-                  class="logo"
+                  class="logo-portfolio"
+                  srcset="./images/portfolio/meditation-app@2x.jpg 2x"
                   src="./images/portfolio/meditation-app.jpg"
-                  alt="Meditaion App"
-                  width="360"
-                  height="300"
+                  alt="Meditation App"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -379,11 +396,12 @@
             <li class="portfolio-list-item">
               <div class="overlay-box">
                 <img
-                  class="logo"
+                  class="logo-portfolio"
+                  srcset="./images/portfolio/taxi-service@2x.jpg 2x"
                   src="./images/portfolio/taxi-service.jpg"
                   alt="Taxi Service"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -399,11 +417,12 @@
             <li class="portfolio-list-item">
               <div class="overlay-box">
                 <img
-                  class="logo"
+                  class="logo-portfolio"
+                  srcset="./images/portfolio/screen-illustrations@2x.jpg 2x"
                   src="./images/portfolio/screen-illustrations.jpg"
                   alt="Screen Illustrations"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -419,11 +438,12 @@
             <li class="portfolio-list-item">
               <div class="overlay-box">
                 <img
-                  class="logo"
+                  class="logo-portfolio"
+                  srcset="./images/portfolio/online-cources@2x.jpg 2x"
                   src="./images/portfolio/online-cources.jpg"
                   alt="Online Courses"
-                  width="360"
-                  height="300"
+                  width="288"
+                  height="280"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -620,14 +640,92 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="order-link-privacy-policy" href=""
-                >Privacy Policy</a
-              ></label
-            >
+              <span class="text-privacy-policy">
+                I accept the terms and conditions of the
+                <a class="order-link-privacy-policy" href="">Privacy Policy</a>
+              </span>
+            </label>
           </div>
           <button class="order-form-send-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-wrapper is-open">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg
+            class="mobile-menu-close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="mobile menu close icon"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-navigation">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item list">
+              <a class="mobile-menu-link link studio" href="/index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item list">
+              <a class="mobile-menu-link link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item list">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="link link-mobile-header">
+          <ul class="list mobile-contact-list">
+            <li>
+              <a
+                class="link mobile-menu-link-address"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link mobile-menu-link-address" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="social-item-mobile-menu">
+          <ul class="list social-mobile-menu">
+            <li class="social-icon-mobile-menu">
+              <a href="" class="social-link-icon-mobile-menu">
+                <svg class="social-icon-item" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-mobile-menu">
+              <a href="" class="social-link-icon-mobile-menu">
+                <svg class="social-icon-item" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-mobile-menu">
+              <a href="" class="social-link-icon-mobile-menu">
+                <svg class="social-icon-item" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-mobile-menu">
+              <a href="" class="social-link-icon-mobile-menu">
+                <svg class="social-icon-item" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
