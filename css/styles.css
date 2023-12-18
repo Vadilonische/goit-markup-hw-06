@@ -975,9 +975,9 @@ ol {
   /* =================TABLET TEAM LIST STYLES================ */
 
   .container-team {
-    max-width: 768px;
-    padding-left: 108px;
-    padding-right: 108px;
+    max-width: 584px;
+    padding-left: 16px;
+    padding-right: 16px
   }
 
   .team-list-all {
@@ -1021,7 +1021,7 @@ ol {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
-    margin-left: 92px;
+    max-width: 584px;
   }
 
   .container-bot-logo {
